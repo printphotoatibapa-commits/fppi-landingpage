@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPPI | Fashion Photographers of the Philippines, Inc.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+/* --- BRAND JPEG LOGO MATRIX --- */
+.logo-brand {
+    display: inline-block;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.logo-brand:hover {
+    opacity: 0.85;
+}
+
+/* Adjust height to fit perfectly inside your 15px blurred sticky header */
+.header-logo-img {
+    height: 45px; 
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Footer layout containment */
+.footer-logo-wrapper {
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Mobile Responsive Optimization */
+@media (max-width: 768px) {
+    .header-logo-img {
+        height: 38px;
+    }
+}
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+        <a href="#" class="logo-brand" aria-label="FPPI Home">
+    <img src="./images/new_logo.png" alt="FPPI - Fashion Photographers of the Philippines Logo" class="header-logo-img">
+</a>
+            <nav class="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#about">About FPPI</a>
+                <a href="#milestones">Milestones</a>
+                <a href="#campaign">Face of the City</a>
+                <a href="#portals">Creative Portals</a>
+                <a href="#contact" class="btn-nav">Partner With Us</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-carousel-container">
+        
+        <div class="hero-slide active" style="background: radial-gradient(circle, rgba(20,20,20,0.6) 0%, rgba(5,5,5,0.95) 100%), url('https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;">
+            <div class="hero-content">
+                <span class="hero-badge">Become The Face Of The City</span>
+                <h1>Empowering Premium <br><span class="gold-text">Fashion Models</span></h1>
+                <p>Connecting aspiring and diverse Filipino talents directly to Out-of-Home (OOH) high-impact LED billboard campaigns across Metro Manila's major commercial networks</p>
+                <div class="hero-ctas">
+                    <a href="#portals" class="btn btn-primary">Apply As Talent</a>
+                    <a href="#campaign" class="btn btn-secondary">Explore Campaign</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" style="background: radial-gradient(circle, rgba(20,20,20,0.6) 0%, rgba(5,5,5,0.95) 100%), url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;">
+            <div class="hero-content">
+                <span class="hero-badge">Bridging Art & Visual Science</span>
+                <h1>Elite Club of <br><span class="gold-text">Fashion Photographers</span></h1>
+                <p>Uplifting our loose association of local image documentors and visionaries based abroad through editorial pipelines, magazine placements, and advanced digital media production.</p>
+                <div class="hero-ctas">
+                    <a href="#about" class="btn btn-primary">Discover Our Legacy</a>
+                    <a href="#portals" class="btn btn-secondary">Join The Club</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" style="background: radial-gradient(circle, rgba(20,20,20,0.6) 0%, rgba(5,5,5,0.95) 100%), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;">
+            <div class="hero-content">
+                <span class="hero-badge">Aesthetic Vision & Pageantry Glam</span>
+                <h1>Master Classes of <br><span class="gold-text">Hair & Makeup Artists</span></h1>
+                <p>Architecting the ultimate visual presentation by linking hair and cosmetics experts with premier high-fashion shoots, traditional media outfits, and live commercial showcases.</p>
+                <div class="hero-ctas">
+                    <a href="#portals" class="btn btn-primary">Join Glam Team</a>
+                    <a href="#contact" class="btn btn-secondary">Register Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" style="background: radial-gradient(circle, rgba(20,20,20,0.6) 0%, rgba(5,5,5,0.95) 100%), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;">
+            <div class="hero-content">
+                <span class="hero-badge">Traditional Textiles & Local Craft</span>
+                <h1>Preserving Legacies of <br><span class="gold-text">Clothing Designers</span></h1>
+                <p>Fusing ancestral artistry with modern industrial networks to maximize economic independence for localized tailors, dressmakers, and master artisans.</p>
+                <div class="hero-ctas">
+                    <a href="#portals" class="btn btn-primary">Submit Portfolio</a>
+                    <a href="#milestones" class="btn btn-secondary">Ecosystem Infrastructure</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide" style="background: radial-gradient(circle, rgba(20,20,20,0.6) 0%, rgba(5,5,5,0.95) 100%), url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;">
+            <div class="hero-content">
+                <span class="hero-badge">Production Architecture & Launches</span>
+                <h1>Event Coordinators &<br><span class="gold-text">Support Team</span></h1>
+                <p>Orchestrating small to large-scale multi-model runway requirements, formal industry presentations, and elite meetings of minds inside luxury hotel ballrooms.</p>
+                <div class="hero-ctas">
+                    <a href="#portals" class="btn btn-primary">Become Partner</a>
+                    <a href="#about" class="btn btn-secondary">View Milestones</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control prev" aria-label="Previous Slide" onclick="moveCarousel(-1)">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control next" aria-label="Next Slide" onclick="moveCarousel(1)">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="setSlide(0)"></span>
+            <span class="indicator" onclick="setSlide(1)"></span>
+            <span class="indicator" onclick="setSlide(2)"></span>
+            <span class="indicator" onclick="setSlide(3)"></span>
+            <span class="indicator" onclick="setSlide(4)"></span>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>SCROLL TO DISCOVER</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+     <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-title-block">
+                <span class="subtitle">Who We Are</span>
+                <h2>The Artistic & Editorial of FPPI</h2>
+                <p class="section-intro">Formed as an association of premier fashion photographers in the Philippines and Filipino visionaries based abroad, FPPI rose during the challenges of 2021 to revitalize our visual landscape.</p>
+            </div>
+
+            <div class="timeline">
+              
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 28, 2022</div>
+                    <div class="timeline-content">
+                        <h3>Formal Launching & Meeting of Minds</h3>
+                        <p>Formally launched from 5:00 PM to 9:00 PM at the Jade Ballroom, Crowne Plaza Hotel, Ortigas Center, managed under the direction of industry pioneers.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item highlight">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Ongoing Vision</div>
+                    <div class="timeline-content">
+                        <h3>Economic Independence</h3>
+                        <p>Gradually paving the path to economic independence for our brilliant local artisans, tailors, dressmakers, and fashion creators by fusing traditional symbols with elite digital media.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alliance-callout">
+                <div class="callout-icon">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <div class="callout-text">
+                    <h3>Strategic Production Ecosystem</h3>
+                    <p>Supported aggressively by <strong>Urban Page Magazine</strong> and the <strong>Quezon City Photo Club (QCPC)</strong>, FPPI operates under the expert artistic guidance of industry icons like <strong>Nardie Presa</strong> and <strong>Audie Espino</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="milestones" class="counter-section">
+        <div class="container counter-grid">
+            <div class="counter-card">
+                <span class="counter-number" data-target="100">0</span><span class="counter-suffix">+</span>
+                <p class="counter-label">Fashion Photographers Community</p>
+            </div>
+            <div class="counter-card">
+                <span class="counter-number" data-target="120">0</span><span class="counter-suffix">+</span>
+                <p class="counter-label">Professional & Aspiring Models Engaged</p>
+            </div>
+            <div class="counter-card">
+                <span class="counter-number" data-target="10">0</span><span class="counter-suffix"></span>
+                <p class="counter-label">Kamuning Group Master Designers</p>
+            </div>
+            <div class="counter-card">
+                <span class="counter-number" data-target="12">0</span><span class="counter-suffix"></span>
+                <p class="counter-label">Forte Production Series Concluded</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="campaign" class="campaign-section">
+        <div class="container">
+            <div class="campaign-wrapper">
+                <div class="campaign-info">
+                    <span class="subtitle">Official Industry Call</span>
+                    <h2>Become the Face of the City</h2>
+                    <p class="campaign-pitch">The streets are ready. The screens are waiting. We are officially opening our doors to Out-of-Home (OOH) billboard networks, premium brands, ad agencies, and financiers to transform real, diverse Filipino talents into massive public billboard icons.</p>
+                    <div class="offering-grid">
+                        <div class="offering-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>High-impact LED campaigns across EDSA, BGC, and Makati.</span>
+                        </div>
+                        <div class="offering-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Scalable marketing from urban visibility to global digital platforms.</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Sponsor a Face / Join Campaign</a>
+                </div>
+                <div class="campaign-visual-placeholder">
+                    <div class="editorial-box">
+                        <span>OOH MEDIA NETWORK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portals" class="portals-section">
+        <div class="container">
+            <div class="section-title-block text-center central">
+                <span class="subtitle">Ecosystem Hub</span>
+                <h2>The Golden Creative Portals</h2>
+                <p>Select your professional discipline to integrate directly into our collaborative national visual pipeline.</p>
+            </div>
+
+            <div class="portals-grid">
+                <div class="portal-card high-profile">
+                    <div class="card-header-icon"><i class="fa-solid fa-crown"></i></div>
+                    <h3>Fashion Models</h3>
+                    <p>Step onto elite runways and campaign screens. Transition directly from raw local discovery into high-impact OOH digital billboard icons through our "Become the Face of the City" flagship movement.</p>
+                    <a href="#contact" class="portal-link secure-gold">Apply as Talent</a>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-header-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Fashion Photographers</h3>
+                    <p>Join a structured loose association of visual documentors across the country and abroad. Access direct publication channels with Urban Page Magazine, editorial sets, and high-visibility brand portfolios.</p>
+                    <a href="#contact" class="portal-link">Register Camera Club</a>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-header-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Hair & Makeup Artists</h3>
+                    <p>Shape the ultimate aesthetic vision of high fashion and pageantry. Collaborate hand-in-hand with top photographers and directors during editorial sessions, magazine spreads, and massive live runway productions.</p>
+                    <a href="#contact" class="portal-link">Join Glam Team Pipeline</a>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-header-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3>Clothing Designers & Artisans</h3>
+                    <p>Bring generational textile talent to light. Secure spaces linked to upcoming state-of-the-art market infrastructures, receive elite mentorship from veterans, and attain true economic independence.</p>
+                    <a href="#contact" class="portal-link">Submit Design Portfolio</a>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-header-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3>Event Coordinators</h3>
+                    <p>Direct the fast-paced flow of premium editorial environments. Architect high-society launches, orchestrate live meetings of minds, and manage large-scale multi-model runway requirements across partner luxury hotel ballrooms.</p>
+                    <a href="#contact" class="portal-link">Apply as Production Partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>FP<span class="gold-text">PI</span></h3>
+                <p class="footer-tagline">Fashion Photographers of the Philippines, Inc.</p>
+                <p class="footer-desc">A professional collaborative infrastructure established to turn traditional craft into sustainable visual science and empower community creators nationwide.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <p class="hashtag">#FPPIOfficial #FaceOfTheCity</p>
+            </div>
+
+            <div class="footer-form-wrapper">
+                <h3>Submit an Industry Partnership Request</h3>
+                <form id="contactForm" class="premium-form" onsubmit="event.preventDefault(); alert('Your FPPI integration ticket has been registered. Our coordination panel will email you shortly.');">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Full Name / Representative Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Corporate Contact Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="track" required>
+                            <option value="" disabled selected>Select Creative Track</option>
+                            <option value="model">Fashion Model</option>
+                            <option value="photographer">Photographer / Image Documentor</option>
+                            <option value="hmua">Hair & Makeup Artist</option>
+                            <option value="designer">Clothing Designer / Artisan</option>
+                            <option value="coordinator">Event Coordinator</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Outline your project scope, campaign targets, or organization questions..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Initialize Onboarding</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-info">
+    <div class="footer-logo-wrapper">
+        <img src="images/ffpi_logo2.png" alt="FPPI Logo" class="footer-logo-img">
+    </div>
+    <p class="footer-tagline">Fashion Photographers of the Philippines, Inc.</p>
+    <p class="footer-desc">An association established to bridge and uplift the process of development of textile, craft, and fashion as a form of art and science.</p>
+</div>
+        </div>
+    </footer>
+
+    <div id="chatbot-widget" class="chatbot-container closed">
+        <button id="chat-trigger" class="chat-fab" aria-label="Open FPPI Concierge AI">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span class="chat-badge">1</span>
+        </button>
+
+        <div class="chat-window">
+            <div class="chat-header">
+                <div class="bot-profile">
+                    <div class="avatar-container">
+                        <i class="fa-solid fa-camera"></i>
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="bot-title-info">
+                        <h4>FPPI Assistant</h4>
+                        <span>Visual Arts Concierge</span>
+                    </div>
+                </div>
+                <button id="chat-close" class="btn-chat-close" aria-label="Close Chat"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div id="chat-body" class="chat-body">
+                <div class="message system-msg">
+                    <p>Welcome to FPPI. Ask me questions about our models, photographers, hair & makeup networks, clothing designers, or event coordination details.</p>
+                </div>
+            </div>
+
+            <div class="chat-footer">
+                <input type="text" id="chat-input" placeholder="Ask about our guild or channels..." aria-label="Chat input">
+                <button id="chat-send" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
